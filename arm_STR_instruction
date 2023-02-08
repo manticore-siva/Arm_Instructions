@@ -1,0 +1,12 @@
+///////////////////////////////////////////
+//                                       //
+//   Authore Name : Sivaprakasam.v       //
+//   Title : ARM instructions STR        //
+//   Date  : 08/02/2023                  //
+//                                       // 
+///////////////////////////////////////////
+ 
+   LDR R0,=0X20000000  // Load memory address to R0 register
+	 MOV R1,=0X20        // Load memory address to R1 register
+	 STRB R1,[R0,#1]     // Now R1 register value store the R0 #1offset memory location
+   LOOP : B LOOP
