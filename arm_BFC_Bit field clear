@@ -1,0 +1,14 @@
+///////////////////////////////////////////////
+//                                           //
+//   Authore Name : Sivaprakasam.v           //
+//   Title : ARM instructions BFC            //
+//   Date  : 08/02/2023                      //
+//                                           // 
+///////////////////////////////////////////////
+ 
+  
+   MOV R1,#12
+   
+   BFC R1,#2,#8 // First #2 bit position Secand #8 width here selcted position bit after MSB values set as zero 
+   
+   LOOP : B LOOP
