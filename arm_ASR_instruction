@@ -1,0 +1,11 @@
+///////////////////////////////////////////
+//                                       //
+//   Authore Name : Sivaprakasam.v       //
+//   Title : ARM instructions ASR        //
+//   Date  : 08/02/2023                  //
+//                                       // 
+///////////////////////////////////////////
+ 
+   MOV R0,20
+   ASR R0,#2   // Arithmetic Shift Right(ASR),right shifting 2 time
+   LOOP : B LOOP
