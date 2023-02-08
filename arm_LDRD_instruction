@@ -1,0 +1,11 @@
+///////////////////////////////////////////
+//                                       //
+//   Authore Name : Sivaprakasam.v       //
+//   Title : ARM instructions LDRD       //
+//   Date  : 08/02/2023                  //
+//                                       // 
+///////////////////////////////////////////
+ 
+   LDR R0,=0X20000000  // Load memory address to R0 register
+	 LDR R1,R2, [R0]     // Load memory address to R1 & R2 registers
+   LOOP : B LOOP
