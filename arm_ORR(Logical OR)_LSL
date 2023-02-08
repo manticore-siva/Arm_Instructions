@@ -1,0 +1,12 @@
+///////////////////////////////////////////////
+//                                           //
+//   Authore Name : Sivaprakasam.v           //
+//   Title : ARM instructions ORR LSL        //
+//   Date  : 08/02/2023                      //
+//                                           // 
+///////////////////////////////////////////////
+ 
+   MOV R0,#5
+   MOV R1,#3
+   ORR R3, R0,R1  // R3 = R0 * R1
+   LOOP : B LOOP
