@@ -1,0 +1,11 @@
+///////////////////////////////////////////
+//                                       //
+//   Authore Name : Sivaprakasam.v       //
+//   Title : ARM instructions LSL        //
+//   Date  : 08/02/2023                  //
+//                                       // 
+///////////////////////////////////////////
+ 
+   MOV  R1,#20
+   LSL  R1,#2  // R1 Register value 2 time left shifting
+   LOOP : B LOOP
