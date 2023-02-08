@@ -1,0 +1,16 @@
+///////////////////////////////////////////
+//                                       //
+//   Authore Name : Sivaprakasam.v       //
+//   Title : ARM instructions NE         //
+//   Date  : 08/02/2023                  //
+//                                       // 
+///////////////////////////////////////////
+ 
+      MOV R0,#0
+   
+LOOP1:
+      ADD R0,#1
+      CMP R0,#20  // Here compare R0 values 
+      BNE LOOP1   // NE(NotEqual) condition checking
+      
+   LOOP : B LOOP
