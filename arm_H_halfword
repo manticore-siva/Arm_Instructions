@@ -1,0 +1,15 @@
+/////////////////////////////////////////////
+//                                         //
+//   Authore Name : Sivaprakasam.v         //
+//   Title : ARM instructions "H" halfword //
+//   Date  : 08/02/2023                    //
+//                                         // 
+/////////////////////////////////////////////
+ 
+   LDR R0,=0X20000000  // Load memory address to R0 register
+	 MOV R1,#0
+	 MOV R2,#0
+
+   STRH R1,[R0,R2]  //R1 value store to R0 register memory R2 offset location
+    
+   LOOP : B LOOP
