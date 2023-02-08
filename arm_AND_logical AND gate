@@ -1,0 +1,13 @@
+///////////////////////////////////////////////
+//                                           //
+//   Authore Name : Sivaprakasam.v           //
+//   Title : ARM instructions Multiplication //
+//   Date  : 08/02/2023                      //
+//                                           // 
+///////////////////////////////////////////////
+ 
+   MOV R0,#10
+   
+   AND R2, R0,#0X08  // Based on AND truth table 
+   
+   LOOP : B LOOP
