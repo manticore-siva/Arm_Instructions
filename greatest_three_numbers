@@ -1,0 +1,38 @@
+//////////////////////////////////////////////////
+//                                              //
+//   Authore Name : Sivaprakasam.v              //
+//   Title : ARM instructions GREATEST 3 NUMBER //
+//   Date  : 08/02/2023                         //
+//                                              // 
+//////////////////////////////////////////////////
+ 
+   
+ 	    MOV R0,#9   // first register value
+	    MOV R1,#12  // secand register value
+	    MOV R2,#0  // thrid register value
+LOOPS:
+	    CMP R0,R1   //compare R0 and R1 values if R0 big number goto loop1
+	    BGT LOOP1   // condition true goto loop1
+	    MOV R4,R0   // condition false like swap the RO and R1 values
+	    MOV R0,R1   // now R0 = R1
+	    MOV R1,R4   //now  R1 = R4
+	    B LOOPS    // again goto loops
+      
+LOOPIN: B LOOPIN
+
+
+LOOP1:
+	    CMP R0,R2    // now compare R0 and R2
+	    BGT LOOP3    // if condition true goto loop3
+	    B LOOPF      //else goto loopf
+
+LOOP3:
+	    MOV R5,R0    // R5 = R0 like final great number
+LOOP: B LOOP     // infinity loop
+
+
+LOOPF:
+		  MOV R5,R2  //  r5 = r2 now final great number
+		  LOOPFI: B LOOPFI
+      
+////////////END///////////////////////////////
