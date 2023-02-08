@@ -1,0 +1,12 @@
+///////////////////////////////////////////
+//                                       //
+//   Authore Name : Sivaprakasam.v       //
+//   Title : ARM instructions ADD        //
+//   Date  : 08/02/2023                  //
+//                                       // 
+///////////////////////////////////////////
+
+    MOV R0,#100   // R0 register assign value 100
+    MOV R1,#200   // R1 register assign value 200
+    ADD R3,R0,R1  // R3= R0+R1 add r0 and r1 and store to R3 register
+    LOOP: B LOOP  // Infinity loop
