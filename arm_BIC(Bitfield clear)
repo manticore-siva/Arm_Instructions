@@ -1,0 +1,16 @@
+///////////////////////////////////////////////
+//                                           //
+//   Authore Name : Sivaprakasam.v           //
+//   Title : ARM instructions BIC            //
+//   Date  : 08/02/2023                      //
+//                                           // 
+///////////////////////////////////////////////
+ 
+   MOV R0,#5
+   MOV R1,#12
+   
+   BIF R0,#1  // 5 = 0 1 0 1  It clear first bit like 1 value set as zero now 0 1 0 0 
+   
+   BIF R1,#4  // 12 = 1 1 0 0 Which bit have 4 that bit set zero now 1 0 0 0 
+   
+   LOOP : B LOOP
