@@ -1,0 +1,23 @@
+///////////////////////////////////////////////////////////
+//                                                       //
+//   Authore Name : Sivaprakasam.v                       //
+//   Title : ARM instructions ITBLOCK(greatest 3 number  //
+//   Date  : 10/02/2023                                  //
+//                                                       // 
+///////////////////////////////////////////////////////////
+
+    MOV R0,#121   //input R0 value
+		MOV R1,#123   //input R1 value
+		MOV R2,#200   //input R2 value
+
+		CMP R0,R1     //compare R0,R1 values
+		ITE GT        // R0 > R1
+		MOVGT R4,R0   // if it true  R4 = R0 > R1
+		MOVLE R4,R1   // if it false R4 = R0 > R1
+
+		CMP R4,R2     //compare R4,R2 values
+		IT LS         // check less than condition
+		MOVLS R4,R2   // if condition true R4 = R2
+    
+    
+    ///////////////END//////////////////////////
