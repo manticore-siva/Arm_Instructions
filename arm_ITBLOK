@@ -1,0 +1,35 @@
+///////////////////////////////////////////////////////////
+//                                                       //
+//   Authore Name : Sivaprakasam.v                       //
+//   Title : ARM instructions ITBLOCK                    //
+//   Date  : 10/02/2023                                  //
+//                                                       // 
+///////////////////////////////////////////////////////////
+
+    MOV R0,#11
+		MOV R1,#10
+
+		ITETE NE         //here check four instructions NOTEQUAL (R0 != R1)
+		SUBNE R4,R0,R1
+		MULEQ R5,R0,R1
+		ADDNE R6,R0,R1
+		SUBEQ R7,R0,R1
+    
+		IT EQ           //check equal
+		SUBEQ R11,R0,R1
+
+		CMP R0,R1     //compare R0 and R1 register
+		ITE GT       //graterthan RO > R1
+		ADDGT R8,R0,R1
+		SUBLE R9,R0,R1
+		IT HS        //greaterthan or equal
+		MULHS R9,R0,R1
+		IT LT        //check leesthan
+		ANDLT R10,R0,R1
+		ITE VC     //check over flow
+		ORRVC R11,R0,R1
+		EORVS R12,R0,R1
+
+		CMP R0,R1
+		IT GT
+		MOVGT R6,R0
